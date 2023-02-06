@@ -22,11 +22,15 @@ const Forecasts = ({ city, onChangeCity, startDate, endDate }: Props) => {
   }, [city]);
 
   if (isLoading) {
-    return <div>Loading forecasts</div>;
+    return <div className="forecasts_root">Loading forecasts</div>;
   }
 
   if (isError) {
-    return <div>something happened while loading your forecasts</div>;
+    return (
+      <div className="forecasts_root">
+        something happened while loading your forecasts
+      </div>
+    );
   }
 
   return (

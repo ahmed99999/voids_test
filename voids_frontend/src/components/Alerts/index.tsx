@@ -32,7 +32,9 @@ const Alerts = ({ city, startDate, endDate }: Props) => {
 
   return (
     <div className="alerts_root">
-      <button onClick={handleGetAlerts}>Get Alerts for the Next 2 weeks</button>
+      <button onClick={handleGetAlerts}>
+        Get Alerts for the Next 2 weeks for {city}
+      </button>
       {alerts && (
         <div className="alerts">
           {alerts.map((alert) => (
