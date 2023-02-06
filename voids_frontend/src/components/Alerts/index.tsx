@@ -17,11 +17,15 @@ const Alerts = ({ city, startDate, endDate }: Props) => {
   } = useAlerts(city, startDate, endDate);
 
   if (isLoading) {
-    return <div>Loading alerted days</div>;
+    return <div>Loading alerted days for the store in {city}</div>;
   }
 
   if (isError) {
-    return <div>Error happened when loading alerted days</div>;
+    return (
+      <div>
+        Error happened when loading alerted days for the store in {city}
+      </div>
+    );
   }
 
   const handleGetAlerts = () => {
