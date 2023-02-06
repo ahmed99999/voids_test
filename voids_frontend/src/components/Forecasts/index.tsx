@@ -47,7 +47,7 @@ const Forecasts = ({ city, onChangeCity, startDate, endDate }: Props) => {
           <thead>
             <tr>
               <th>Date</th>
-              <th>Sales</th>
+              <th>Forecasted Sales</th>
               <th>Temperature</th>
               <th>city</th>
             </tr>
